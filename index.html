@@ -1,61 +1,78 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
     <header class="header">
       <nav class="header__menu">
         <ul class="header__links-list">
           <li class="header__links-list-item header__link_active">
-            <a class="header__link">главная</a>
+            <a class="header__link">
+              главная
+            </a>
           </li>
           <li class="header__links-list-item">
-            <a class="header__link" href="#0">посмотреть лоты</a>
+            <a class="header__link" href="#lots">
+              посмотреть лоты
+            </a>
           </li>
           <li class="header__links-list-item">
-            <a class="header__link" href="#0">об аукционе</a>
+            <a class="header__link" href="#about">
+              об аукционе
+            </a>
           </li>
         </ul>
       </nav>
       <a class="header__logo">
         <img class="header__logo-image" 
              src="./images/logo-black.svg"
-             alt="Логотип проекта"
-        />     
+             alt="Логотип проекта">     
       </a>
       <address class="address">
-        <section class="header__address">
-          <a href="tel:+99995555555">+9 999 555 5555</a>
+        <div class="header__address">
+          <a href="tel:+99995555555" class="header__tel">
+            +9 999 555 5555
+          </a>
           <br>
-          <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          <a href="mailto:info@sobaka.ge" class="header__mail">
+            info@sobaka.ge
+          </a>
           <p>наб. Принсенграхт 263-
           <br>
-          265, Амстердам</p>
-        </section>  
+          265, Амстердам
+          </p>
+        </div>  
       </address>
     </header>
     <section class="cover">
       <div class="overlay"></div>
       <h1 class="cover__title">
-        <span class="aligned-text">о
-          <span class="letter-spacing-extended">но
+        <span class="aligned-text">
+          о
+          <span class="letter-spacing-extended">
+            но
           </span>
         </span>
-        <span class="aligned-text_center">те
-          <span class="letter-spacing-extended">бе
+        <span class="aligned-text_center">
+          те
+          <span class="letter-spacing-extended">
+            бе
           </span>
         </span>
         <span class="aligned-text_right">
-          <span class="letter-spacing-extended">н
-            </span>ад
-            <span class="no-letter-spacing">о
+          <span class="letter-spacing-extended">
+            н
+            </span>
+            ад
+            <span class="no-letter-spacing">
+              о
             </span>
         </span>
       </h1>
@@ -68,8 +85,10 @@
         </button>
       </div>
     </section>  
-    <article class="lots">
-      <h2 class="lots__heading">Лоты</h2>
+    <article class="lots" id="lots">
+      <h2 class="lots__heading">
+        Лоты
+      </h2>
       <ul class="lots__card-list">
         <li class="lots__card-list-item">
           <a href="#0" class="card-link">
@@ -141,12 +160,12 @@
         посмотреть больше
       </a>
     </article>
-    <section class="about">
+    <section class="about" id="about">
       <div class="about__column">
         <div class="about__logo">
           <img src="/ono-tebe-nado/images/logo-white.svg" 
-          alt="Логотип проекта" 
-          class="about__logo-image">
+               alt="Логотип проекта" 
+               class="about__logo-image">
         </div>
         <div class="about_description">
           <h2 class="about__title">
@@ -177,14 +196,18 @@
     </section>
     <footer class="footer">
       <address class="address">
-        <section class="header__address">
-          <a href="tel:+99995555555">+9 999 555 5555</a>
+        <div class="header__address">
+          <a href="tel:+99995555555" class="header__tel">
+            +9 999 555 5555
+          </a>
           <br>
-          <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          <a href="mailto:info@sobaka.ge" class="header__mail">
+            info@sobaka.ge
+          </a>
           <p>наб. Принсенграхт 263-
-          <br>
-          265, Амстердам</p>
-        </section>  
+          <br>265, Амстердам
+          </p>
+        </div>  
       </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
@@ -194,12 +217,12 @@
             </a>
           </li>
           <li class="footer__menu-list-item">
-            <a class="footer__menu-link" href="#0">
+            <a class="footer__menu-link" href="#lots">
               посмотреть лоты
             </a>
           </li>
           <li class="footer__menu-list-item">
-            <a class="footer__menu-link" href="#0">
+            <a class="footer__menu-link" href="#about">
               об аукционе
             </a>
           </li>
@@ -207,21 +230,21 @@
       </nav>
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
-          <a class="footer__social-link">
+          <a href="#0" class="footer__social-link">
             <img src="/ono-tebe-nado/images/yt.svg" 
             alt="Ютуб" 
             class="footer__social-icon">
           </a>
         </li>
         <li class="footer__social-list-item">
-          <a class="footer__social-link">
+          <a href="#0" class="footer__social-link">
             <img src="/ono-tebe-nado/images/vk.svg" 
             alt="Вконтакте" 
             class="footer__social-icon">
           </a>
         </li>
         <li class="footer__social-list-item">
-          <a class="footer__social-link">
+          <a href="#0" class="footer__social-link">
             <img src="/ono-tebe-nado/images/pinterest.svg" 
             alt="Пинтерест" 
             class="footer__social-icon">

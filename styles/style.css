@@ -1,33 +1,35 @@
 .header {
+  display: flex;
+  align-items: center;
   width: 1052px;
   height: 105px;
   margin: 92px 24px 96px;
-  display: flex;
-  align-items: center;
-  
 }
 
 .header__menu {
-  margin: 44px 0 40px 27px;
+  margin: 44px 0 40px 26px;
 }
 
 .header__links-list {
-  display: flex;   
+  display: flex;
 }
 
 .header__links-list-item {
+  padding-right: 32px;
+  font-size: 20px;
   list-style: circle;
-  margin-right: 32px;     
 }
 
 .header__link {
+  border-bottom: 1px #000 solid;
   color: #000;
   font-family: Raleway;
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
-  letter-spacing: 0.18px;     
+  letter-spacing: 0.18px;
+  text-decoration: none;
 }
 
 .header__link_active {
@@ -35,29 +37,44 @@
 }
 
 .header__link_active .header__link {
-  text-decoration: none;
+  border-bottom: none;
 }
 
 .header__logo {
   display: block;
-  background-position: center;
   width: 148px;
-  margin: 0 185px 0 4px;
+  height: 105px;
+  margin: 0 184px 0 4px;
+}
+
+.header__logo-image {
+  height: 100%;
 }
 
 .address {
-  width: 235px;
-  margin-right: 28px;
+  width: 239px;
+  margin-top: 5px;
+  margin-right: 26px;
 }
 
 .header__address {
   color: #000;
   font-family: Raleway;
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   line-height: 24.3px;
   letter-spacing: 0.18px;
+}
+
+.header__tel {
+  border-bottom: 1px #000 solid;
+  text-decoration: none;
+}
+
+.header__mail {
+  border-bottom: 1px #000 solid;
+  text-decoration: none;
 }
 
 .cover {
@@ -65,27 +82,27 @@
   width: 1100px;
   height: 757px;
   background-image: url(/ono-tebe-nado/images/cover.jpg);
-  background-size: cover;
   background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 }
 
 .overlay {
   position: absolute;
-  z-index: 1;
   inset: 0;
+  z-index: 1;
   background-color: rgb(0 0 0 / 0.6);
 }
 
 .cover__title {
   position: absolute;
-  z-index: 2;
   inset: 165px 50px 237px 50px;
-  color: #FFF;
+  z-index: 2;
+  color: #fff;
   font-family: Raleway;
+  font-weight: 700;
   font-size: 100px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 115%;
   letter-spacing: 30px;
   text-transform: uppercase;
 }
@@ -93,8 +110,7 @@
 .aligned-text {
   display: flex;
   justify-content: start;
-  align-items: start;
-  margin-bottom: 20px;
+  line-height: 115%;
 }
 
 .letter-spacing-extended {
@@ -104,14 +120,13 @@
 .aligned-text_center {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
+  line-height: 137%;
 }
 
-.aligned-text_right{
+.aligned-text_right {
   display: flex;
   justify-content: end;
-  align-items: end;
+  line-height: 108%;
 }
 
 .no-letter-spacing {
@@ -119,37 +134,36 @@
 }
 
 .cover__description {
-  display: flex;
-  justify-content: space-between;
   position: absolute;
-  z-index: 2;
   inset: 655px 50px 51px 78px;
+  z-index: 2;
+  display: flex;
 }
 
 .cover__description-text {
-  margin: 12px 79px 11px 0;
-  color: #FFF;
+  margin: 12px 76px 11px 0;
+  color: #fff;
   font-family: Raleway;
+  font-weight: 400;
   font-size: 22px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 28px; 
+  line-height: 28px;
   text-transform: uppercase;
-  word-spacing: 18px;  
+  word-spacing: 19px;
 }
 
 .bet-button {
   width: 256px;
   height: 51px;
-  border: 1px solid #FFF;
-  background-color: transparent;
-  color: #FFF;
+  border: 1px solid #fff;
+  color: #fff;
   font-family: Raleway;
+  font-weight: 500;
   font-size: 22px;
   font-style: normal;
-  font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
+  background-color: transparent;
 }
 
 .lots {
@@ -159,26 +173,27 @@
 }
 
 .lots__heading {
-  margin-left: 40px;
+  padding-left: 40px;
   color: #000;
   font-family: Raleway;
+  font-weight: 700;
   font-size: 40px;
   font-style: normal;
-  font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
 }
 
 .lots__card-list {
   display: flex;
+  column-gap: 25px;
   margin: 27px 0 30px 0;
   list-style-type: none;
 }
 
 .lots__card-list-item {
   display: flex;
-  justify-content: center;
   flex-grow: 1;
+  justify-content: center;
 }
 
 .card-link {
@@ -199,9 +214,9 @@
   width: 334px;
   height: 563px;
   background-image: url(/ono-tebe-nado/images/card-lot-01.jpg);
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .card_type_book {
@@ -210,9 +225,9 @@
   width: 334px;
   height: 563px;
   background-image: url(/ono-tebe-nado/images/card-lot-02.jpg);
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .card_type_picture {
@@ -221,50 +236,51 @@
   width: 334px;
   height: 563px;
   background-image: url(/ono-tebe-nado/images/card-lot-03.jpg);
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
-
 .lots_text {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  inset: 0;
-  position: absolute;
-  z-index: 2;
-  margin: 51px 40px 48px 40px;
+  margin: 50px 40px 48px 40px;
 }
 
 .card__title {
-  color: #FFF;
+  color: #fff;
   font-family: Raleway;
+  font-weight: 700;
   font-size: 22px;
   font-style: normal;
-  font-weight: 700;
   line-height: 120%;
   text-decoration-line: underline;
   text-transform: uppercase;
 }
 
 .card__text {
-  color: #FFF;
+  color: #fff;
   font-family: Raleway;
+  font-weight: 400;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 120%; 
+  line-height: 120%;
 }
 
 .lots__look-more-link {
   margin-left: 40px;
+  border-bottom: 1px #000 solid;
   color: #000;
   font-family: Raleway;
+  font-weight: 400;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
+  text-decoration: none;
 }
 
 .about {
@@ -275,20 +291,20 @@
 
 .about__column {
   display: grid;
+  grid-template-columns: 334px 718px;
   height: 100%;
-  grid-template-columns: 334px auto;
 }
 
 .about__logo {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 240px;
   height: 240px;
   margin-top: 35px;
   margin-left: 47px;
-  justify-content: center;
-  align-items: center;
-  background-color: #000;
   border-radius: 50%;
+  background-color: #000;
 }
 
 .about__logo-image {
@@ -301,14 +317,15 @@
   flex-direction: column;
   justify-content: flex-end;
   row-gap: 100px;
+  margin-left: 26px;
 }
 
 .about__title {
   color: #000;
   font-family: Raleway;
+  font-weight: 700;
   font-size: 40px;
   font-style: normal;
-  font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
 }
@@ -316,15 +333,15 @@
 .about__text {
   color: #000;
   font-family: Raleway;
+  font-weight: 400;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.2px;
 }
 
-.about__text_margin{
-  margin-bottom: 24px;
+.about__text_margin {
+  padding-bottom: 24px;
+  letter-spacing: 0.1px;
 }
 
 .footer {
@@ -332,9 +349,12 @@
   justify-content: space-between;
   width: 1000px;
   height: 98px;
-  margin: 0 50px 88px 50px;
+  margin: 0 50px 88px 51px;
 }
 
+.footer .address {
+  margin: 0;
+}
 
 .footer__menu-list {
   display: flex;
@@ -343,18 +363,20 @@
   list-style: none;
 }
 
-.footer__menu-link{
+.footer__menu-link {
+  border-bottom: 1px #000 solid;
   color: #000;
-  text-align: center;
   font-family: Raleway;
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
+  text-align: center;
+  text-decoration: none;
 }
 
 .footer__menu-link_active .footer__menu-link {
-  text-decoration: none;
+  border-bottom: none;
 }
 
 .footer__social-list {
